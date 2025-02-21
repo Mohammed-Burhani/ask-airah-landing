@@ -53,7 +53,7 @@ const Insights = () => {
   };
 
   return (
-    <Container>
+    <Container className={"overflow-hidden"}>
       <div className="flex flex-col justify-center items-center gap-4">
         <Heading className="text-[#1E1749] text-center">
           Insights & Inspiration
@@ -72,7 +72,7 @@ const Insights = () => {
             effect="cards"
             grabCursor={true}
             modules={[EffectCards]}
-            className="mySwiper w-[200px] h-[300px] xs:w-[300px] xs:h-[500px] 4xl:w-[500px] 4xl:h-[700px]"
+            className="mySwiper w-[300px] h-[400px] xs:w-[300px] xs:h-[500px] 4xl:w-[500px] 4xl:h-[700px]"
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
@@ -86,7 +86,7 @@ const Insights = () => {
                   className="object-cover h-full select-none"
                 />
                 <div className="flex flex-col gap-4 bg-gradient-to-t from-[#111] to-transparent absolute bottom-0 w-full h-52 px-7">
-                  <div className="bg-[#F9B50C] h-3 w-20 mt-7 mx-auto xl:mx-0" />
+                  <div className="bg-[#F9B50C] h-2 md:h-3 w-20 mt-7 mx-auto xl:mx-0" />
                   <SmallCaption className={"text-white max-w-sm text-center xl:text-start"}>
                     {slides[activeIndex].title}
                   </SmallCaption>
