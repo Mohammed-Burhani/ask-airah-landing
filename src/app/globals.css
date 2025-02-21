@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.swiper {
+/* .swiper {
   width: 500px;
   height: 700px;
-}
+} */
 
 .swiper-slide {
   display: flex;

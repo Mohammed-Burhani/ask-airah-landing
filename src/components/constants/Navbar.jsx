@@ -1,3 +1,4 @@
+import { HambergerMenu } from "iconsax-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -5,15 +6,19 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="bg-white p-5 xl:px-10 4xl:px-20 4xl:py-10 flex justify-between items-center fixed w-full z-50">
-      <Image
-        alt="Ash-Airah"
-        src={"/logo.svg"}
-        width={500}
-        height={500}
-        className="w-48"
-      />
+      <div className="flex items-center w-full xl:w-fit justify-between">
+        <Image
+          alt="Ash-Airah"
+          src={"/logo.svg"}
+          width={500}
+          height={500}
+          className="w-36 xl:w-48"
+        />
 
-      <nav>
+        <HambergerMenu className="stroke-black xl:hidden" size={32} />
+      </div>
+
+      <nav className="hidden xl:flex">
         <ul className="flex gap-10 items-center">
           <li>
             <Link

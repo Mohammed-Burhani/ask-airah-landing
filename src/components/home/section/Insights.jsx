@@ -65,14 +65,14 @@ const Insights = () => {
         </Body>
       </div>
 
-      <div className="flex flex-wrap 2xl:flex-nowrap items-center justify-center gap-40 mt-20 relative">
+      <div className="flex flex-wrap 2xl:flex-nowrap items-center justify-center gap-10 mt-5 xl:gap-40 xl:mt-20 relative">
         {/* Swiper Slider */}
         <div className="relative">
           <Swiper
             effect="cards"
             grabCursor={true}
             modules={[EffectCards]}
-            className="mySwiper"
+            className="mySwiper w-[200px] h-[300px] xs:w-[300px] xs:h-[500px] 4xl:w-[500px] 4xl:h-[700px]"
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
@@ -86,8 +86,8 @@ const Insights = () => {
                   className="object-cover h-full select-none"
                 />
                 <div className="flex flex-col gap-4 bg-gradient-to-t from-[#111] to-transparent absolute bottom-0 w-full h-52 px-7">
-                  <div className="bg-[#F9B50C] h-3 w-20 mt-7" />
-                  <SmallCaption className={"text-white max-w-sm"}>
+                  <div className="bg-[#F9B50C] h-3 w-20 mt-7 mx-auto xl:mx-0" />
+                  <SmallCaption className={"text-white max-w-sm text-center xl:text-start"}>
                     {slides[activeIndex].title}
                   </SmallCaption>
                 </div>
@@ -99,11 +99,13 @@ const Insights = () => {
         </div>
 
         {/* Dynamic Content for Active Slide */}
-        <div className="max-w-screen-sm flex flex-col gap-4">
+        <div className="max-w-screen-sm text-center items-center xl:items-start xl:text-start flex flex-col gap-4">
           <Heading className="text-[#1E1749]">
             {slides[activeIndex].title}
           </Heading>
-          <Body>{slides[activeIndex].description}</Body>
+          <Body className={"text-center xl:text-start"}>
+            {slides[activeIndex].description}
+          </Body>
 
           <PrimaryButton
             title="Explore More"

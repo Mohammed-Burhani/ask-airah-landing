@@ -7,20 +7,20 @@ import React from "react";
 
 const Team = () => {
   return (
-    <div className="flex flex-row items-center gap-7 mt-10">
+    <div className="flex flex-wrap xl:flex-nowrap flex-col-reverse xl:flex-row items-center gap-7 mt-10">
       <div className="w-full">
         <Image
           src={"/Banner/team.png"}
           width={500}
           height={500}
           alt={"Aira Team"}
-          className="w-full object-cover h-[28rem]"
+          className="w-full object-cover h-[28rem] "
         />
       </div>
 
-      <Container className="flex flex-col gap-7">
-        <Heading className="text-[#1E1749]">Meet the Airah team</Heading>
-        <Body>
+      <Container className="flex flex-col items-center xl:items-start gap-7">
+        <Heading className="text-[#1E1749] text-center xl:text-start">Meet the Airah team</Heading>
+        <Body className={"text-center xl:text-start"}>
           Behind AIRAH is a team of compassionate experts dedicated to
           transforming cancer care. We’re committed to supporting you with
           knowledge, technology, and a heartfelt understanding of your journey.

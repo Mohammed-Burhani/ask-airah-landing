@@ -7,8 +7,8 @@ import { Facebook, Instagram, Whatsapp } from "iconsax-react";
 const Footer = () => {
   return (
     <Container className={"border-t border-gray-400 w-full mt-20 !pb-5"}>
-      <div className="flex items-center justify-between gap-7 w-full">
-        <div className="flex flex-col">
+      <div className="flex flex-wrap items-center justify-center xl:justify-between gap-7 w-full">
+        <div className="flex flex-col items-center xl:items-start">
           <Image
             alt="Ash-Airah"
             src={"/logo.svg"}
@@ -19,7 +19,7 @@ const Footer = () => {
           <Body className={"text-[#5E6282] mt-4"}>
             Your Companion in Cancer Care
           </Body>
-          <div className="flex flex-col gap-2 mt-7">
+          <div className="flex flex-col items-center xl:items-start gap-2 mt-7">
             <Body className={"text-[#5E6282] font-semibold"}>
               Discover our app
             </Body>
@@ -29,9 +29,15 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-7">
-          <Body className="text-right text-[#5E6282]">Meet the team</Body>
-          <Body className="text-right text-[#5E6282]">Who we area</Body>
-          <Body className="text-right text-[#5E6282]">Contact us</Body>
+          <Body className="text-center xl:text-right text-[#5E6282]">
+            Meet the team
+          </Body>
+          <Body className="text-center xl:text-right text-[#5E6282]">
+            Who we area
+          </Body>
+          <Body className="text-center xl:text-right text-[#5E6282]">
+            Contact us
+          </Body>
 
           <div className="flex gap-4 items-center">
             <button className="bg-[#0A3F8D] text-white p-3 rounded-full">
@@ -60,11 +66,11 @@ export default Footer;
 
 const DownloadApp = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-wrap xl:flex-nowrap justify-center xl:justify-start items-center xl:items-start gap-4">
       <a
         href=""
         target="_blank"
-        className="flex items-center justify-center w-64 px-5 py-3 text-center text-white bg-black rounded-xl"
+        className="flex items-center justify-center px-5 py-3 text-center text-white bg-black rounded-xl"
         rel="noreferrer"
       >
         <svg
@@ -93,7 +99,7 @@ const DownloadApp = () => {
       <a
         href=""
         target="_blank"
-        className="flex items-center justify-center w-64 px-5 py-3 text-center text-white bg-black rounded-xl"
+        className="flex items-center justify-center px-5 py-3 text-center text-white bg-black rounded-xl"
         rel="noreferrer"
       >
         <svg

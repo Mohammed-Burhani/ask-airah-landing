@@ -7,10 +7,10 @@ import React from "react";
 
 const CTA = () => {
   return (
-    <Container className={"!pb-0"}>
+    <Container className={"!pb-0 !overflow-hidden"}>
       <Container
         className={
-          "relative bg-[#B8D7F9]/50 rounded-tl-[7rem] !pb-10 rounded-3xl flex flex-col justify-center items-center gap-7"
+          "relative bg-[#B8D7F9]/50 rounded-tl-[4rem] xl:rounded-tl-[7rem] !pb-10 rounded-xl xl:rounded-3xl flex flex-col justify-center items-center gap-7"
         }
       >
         <Image
@@ -39,7 +39,7 @@ const CTA = () => {
           height={500}
           src="/Objects/send.svg"
           alt="Start with airah"
-          className="w-20 h-20 absolute -top-7 -right-7"
+          className="w-14 h-14 xl:w-20 xl:h-20 absolute -top-5 -right-5 xl:-top-7 xl:-right-7"
         />
 
         <Heading className={"text-[#1E1749] text-center"}>
