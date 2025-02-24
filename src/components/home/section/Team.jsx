@@ -7,7 +7,7 @@ import React from "react";
 
 const Team = () => {
   return (
-    <div className="flex flex-wrap xl:flex-nowrap flex-col-reverse xl:flex-row items-center gap-7 mt-10">
+    <div className="flex flex-wrap xl:flex-nowrap flex-col-reverse xl:flex-row items-center gap-7 mt-10" id="team">
       <div className="w-full">
         <Image
           src={"/Banner/team.png"}

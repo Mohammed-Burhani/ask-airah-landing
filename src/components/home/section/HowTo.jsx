@@ -6,7 +6,7 @@ import React from "react";
 
 const HowTo = () => {
   return (
-    <Container className={"!overflow-hidden mb-10 -mt-14 xl:-mt-0 xl:mb-0"}>
+    <Container className={"!overflow-hidden mb-10 -mt-14 xl:-mt-0 xl:mb-0"} id="howto">
       <div className="w-full flex flex-wrap-reverse gap-10 2xl:flex-nowrap items-center">
         <div className="relative">
           <Image
