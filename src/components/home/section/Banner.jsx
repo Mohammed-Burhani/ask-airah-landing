@@ -7,7 +7,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="bg-[#0A3F8D] xl:flex justify-between items-center h-screen xl:!overflow-hidden">
+    <div className="bg-[#0A3F8D] xl:flex justify-between items-center h-full xl:h-screen xl:!overflow-hidden">
       <div className="xl:hidden">
         <Image
           alt="Ask Airah Banner"
