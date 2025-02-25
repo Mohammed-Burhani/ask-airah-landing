@@ -2,6 +2,7 @@ import { Barlow_Condensed, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/constants/Navbar";
 import Footer from "@/components/constants/Footer";
+import ProtectedComponent from "@/components/ProtectedComponent";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,9 +28,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${barlowCondensed.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <ProtectedComponent>{children}</ProtectedComponent>
       </body>
     </html>
   );
